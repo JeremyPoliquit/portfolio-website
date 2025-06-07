@@ -1,6 +1,12 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import Image from "next/image";
 import React from "react";
 
@@ -17,7 +23,7 @@ export default function page() {
           {/* list */}
           <ul className="rounded-full py-2 px-4 flex gap-4 font-semibold text-sm bg-blue-500 shadow-xl shadow-blue-500/50 text-white">
             <li>Home</li>
-            <li>Articles</li>
+            <li>Quotes</li>
             <li>Projects</li>
             <li>Contact</li>
           </ul>
@@ -110,16 +116,46 @@ export default function page() {
 
           {/* Articles */}
           <div className="py-20">
-            <h3 className="font-mono text-lg text-slate-400 mb-4">Article</h3>
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-xl">30 One-Sentence Stories From People Who Have Built Better Habits</CardTitle>
-                <CardDescription className="font-mono">In this article, I’d like to share 30 “one-sentence stories” about building better habits. (They are not all <span className="italic">exactly one sentence</span>, but they are very short.)</CardDescription>
-              </CardHeader>
-              <CardContent className="font-mono text-sm">
-                None of these stories are mine. They were sent to me by readers of Atomic Habits. My hope is that these examples will illustrate how real people are putting the book into practice. They will show you what people are actually doing to build good habits and break bad ones. And hopefully, they will spark some ideas for how you can do the same.
-              </CardContent>
-            </Card>
+            <h3 className="font-mono text-lg text-slate-400 mb-4">Quotes</h3>
+            <div className="flex flex-col gap-6">
+              <Alert>
+                <AlertTitle>
+                  "The only thing we have to fear is fear itself."
+                </AlertTitle>
+                <AlertDescription className="italic">Franklin D. Roosevelt</AlertDescription>
+              </Alert>
+
+              <Alert>
+                <AlertTitle>
+                  "In the end, we will remember not the words of our enemies, but
+                  the silence of our friends."
+                </AlertTitle>
+                <AlertDescription className="italic">Martin Luther King Jr.</AlertDescription>
+              </Alert>
+
+              <Alert>
+                <AlertTitle>
+                  "The only thing we have to fear is fear itself."
+                </AlertTitle>
+                <AlertDescription className="italic">Franklin D. Roosevelt</AlertDescription>
+              </Alert>
+
+              <Alert>
+                <AlertTitle>
+                  "To be yourself in a world that is constantly trying to make
+                  you something else is the greatest accomplishment."
+                </AlertTitle>
+                <AlertDescription className="italic">Ralph Waldo Emerson</AlertDescription>
+              </Alert>
+
+              <Alert>
+                <AlertTitle>
+                  "I have not failed. I've just found 10,000 ways that won't
+                  work."
+                </AlertTitle>
+                <AlertDescription className="italic">Thomas Edison</AlertDescription>
+              </Alert>
+            </div>
           </div>
         </div>
       </div>
