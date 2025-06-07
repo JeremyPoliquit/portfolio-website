@@ -7,7 +7,7 @@ import React from "react";
 export default function page() {
   return (
     <div className="flex justify-center min-h-screen">
-      <div className="max-w-screen-lg w-full px-8 py-4 bg-white shadow-xl shadow-cyan-500/100">
+      <div className="max-w-screen-lg w-full px-8 py-4 bg-white shadow-xl shadow-blue-500/50">
         <nav className="flex justify-center space-x-12 items-center mt-4 relative">
           {/* Icon */}
           <Avatar className=" h-12 w-12">
@@ -116,7 +116,7 @@ export default function page() {
                 <CardTitle className="text-xl">30 One-Sentence Stories From People Who Have Built Better Habits</CardTitle>
                 <CardDescription className="font-mono">In this article, I’d like to share 30 “one-sentence stories” about building better habits. (They are not all <span className="italic">exactly one sentence</span>, but they are very short.)</CardDescription>
               </CardHeader>
-              <CardContent className="font-mono">
+              <CardContent className="font-mono text-sm">
                 None of these stories are mine. They were sent to me by readers of Atomic Habits. My hope is that these examples will illustrate how real people are putting the book into practice. They will show you what people are actually doing to build good habits and break bad ones. And hopefully, they will spark some ideas for how you can do the same.
               </CardContent>
             </Card>
